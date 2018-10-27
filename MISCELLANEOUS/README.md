@@ -1,5 +1,4 @@
-PROJECTLOG
-
+PROJECT LOG:
 
 Checkpoints:
 * notifice direct o persoana

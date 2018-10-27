@@ -1,0 +1,37 @@
+FRONT-END(4-7):
+Pana in S7:
+-> State of art cu privire la "afisarea" comment-urilor (afisarea mutarii care ar fi fost optima, 
+afisarea mesajurilor de genul: "din mutarea precedenta puteai castiga") 
+-> Notatii pentru mutari
+
+BACK-END(6-8):
+Pana in S7:
+-> daca o sa existe o baza de date, ce fel de baza de date o sa fie
+-> limbaj de programare
+-> algoritmi
+
+QA + COLECTARE DE DATE(3-4):
+Pana in S7:
+-> surse de partide
+-> sa hotaram niste teste pe care o sa le facem
+Dupa S7:
+-> o sa facem si testare manuala, si automate
+-> raport final de testare
+-> manual de utilizare al jocului
+
+TEAM LEADER(1-2):
+-> facut o pagina web pentru proiect care va include un link catre proiectul nostru (pana in S7)
+-> facut un repository pentru proiect (pana in S7)
+-> prezenti la toate laboratoarele
+-> afisarea impartirii pe submodule (pana in S7)
+
+
+S5-S6 - facem laboratoarele
+S7 - proiect
+S8 - partiale
+S9 - laborator teoria jocurilor
+S10 - proiect
+S11 - laborator
+S12 - proiect cu solutia functionala
+S13 - proiect (testare, reparare bug-uri, elaborarea documentatiei)
+S14 - proiect (testare, reparare bug-uri, elaborarea documentatiei, evaluarea individuala)
