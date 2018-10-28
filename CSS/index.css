@@ -48,23 +48,17 @@ height: 100%;
 overflow: hidden;
 }
 .button {
-background-color: white;
-border: none;
-border-radius: 5px;
-background-color:black;
-color:#fff;
-font-family: 'Krub', sans-serif;
-font-size: 130%;
-font-weight: bold;
-height: 40px;
-left: 50%;
-margin: 50px 0px;
-position: relative;
-transform: translateX(-50%);
-width: 120px;
-}
-.button{
-cursor: pointer;
+    margin: 15px auto auto;
+    background-color: #71a8af;
+    border: none;
+    color: white;
+    cursor:pointer;
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 32px;
+    width: 150px;
 }
 .fa-home{
 color: black;
@@ -176,9 +170,6 @@ display: inline;
 }
     .app-title{
     font-size: 35px;
-}
-    .button{
-    height: 30px;
 }
 }
 @media only screen and (max-width: 600px) {
