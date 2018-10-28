@@ -16,13 +16,13 @@ function notifyMe() {
 
     // Let's check whether notification permissions have already been granted
     else if (Notification.permission === "granted") {
-        window.open("./HTML/dashBoard.html", '_self');
+        window.open("./HTML/notificationPage.html", '_self');
     }
     // Otherwise, we need to ask the user for permission
     else if (Notification.permission !== "denied") {
         Notification.requestPermission().then(function (permission) {
             if (permission === "granted") {
-                window.open("./HTML/dashBoard.html", '_self');
+                window.open("./HTML/notificationPage.html", '_self');
             }
         });
     }

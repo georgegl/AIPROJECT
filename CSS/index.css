@@ -18,26 +18,28 @@ time, mark, audio, video {
 	padding: 0;
 	vertical-align: baseline;
 }
-.app-description{
-	font-size: 20px;
-	text-align: center;
-	font-family: 'Krub', sans-serif;
-	font-weight: bold; 
-	margin: 0px 50px;
-	text-align: center;
+.app-header{
+	background-color:#e0ffcd;
+	top: 0px;
+	padding: 10px 20px;
+	position: absolute;
+	width: 100%;
 }
-.app-title{
-	font-family: 'Walter Turncoat', cursive;
-	font-size: 50px;
-	font-weight: bold; 
+.app-footer{
+	background-color:#e0ffcd;
+	bottom: 0px;
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+	padding: 30px 0px;
+	position: absolute;
 	text-align: center;
+	width: 100%;
 }
 body{
     background-position: center center; /* Background image is centered vertically and horizontally at all times */
 	background-repeat: no-repeat;   /* Background image doesn't tile */
 	background-attachment: fixed; /* Background image is fixed in the viewport so that it doesn't move when the content's height is greater than the image's height */
     background-size: cover; /* This is what makes the background image rescale based on the container's size */     
-    background-color: #374955; /* Set a background color that will be displayed while the background image is loading */
 	height: 100%;
 	overflow: hidden;
 }
@@ -60,6 +62,18 @@ body{
 .button{
 	cursor: pointer;
 }
+.fa-home{
+	color: black;
+	cursor: pointer;
+}
+.footer-left-border{
+	border-width: 0px 0px 0px 2px;
+	border-style: solid;
+	border-color: #80ac7b;
+}
+.footer-text{
+	padding: 20px 150px;
+}
 html{
 	height: 100%;
 }
@@ -68,7 +82,56 @@ html{
 	position: relative;
 	top:40%;
 }
-
+.krub-text{
+	font-family: 'Krub', sans-serif;
+	font-size: 20px;
+	font-weight: bold; 
+	text-align: center;
+}
+.notification-article{
+	height: 40%;
+	left: 50%;
+	position: relative;
+	transform: translateX(-50%);
+}
+.notification-article__img{
+	height: 100%;
+}
+.search-bar{
+	position: relative;
+	left:20px;
+	top:-8px;
+}
+.search-input{
+	border-color: black;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 5px;
+	font-weight: normal;
+	left: 5px;
+	position: relative;
+	width: 350px;
+}
+.walter-turncoat-text{
+	font-family: 'Walter Turncoat', cursive;
+	font-size: 50px;
+	font-weight: bold; 
+	text-align: center;
+}
+.walter-turncoat-text--notification{
+	display: inline;
+}
+@media only screen and (max-width: 1400px) {
+	.footer-text{
+		padding: 20px 50px;
+	}
+}
+@media only screen and (max-width: 700px) {
+	.app-footer{
+		grid-template-rows: 50% 50%;
+		grid-template-columns: 50% 50%;
+	}
+}
 @media only screen and (max-width: 650px) {
 	.app-description{
 		font-size: 15px;
@@ -79,5 +142,14 @@ html{
 	}
 	.button{
 		height: 30px;
+	}
+}
+@media only screen and (max-width: 600px) {
+	.app-footer{
+		grid-template-rows: 33% 33% 33%;
+		grid-template-columns: 100%;
+	}
+	.footer-left-border{
+		border:none;
 	}
 }
