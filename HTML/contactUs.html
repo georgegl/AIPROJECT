@@ -7,8 +7,8 @@
     <meta charset="utf-8"/>
     <title>Contact us</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="../CSS/index.css"/>
-    <script type="text/javascript" src="../SCRIPTS/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="../CSS/contactUs.css"/>
+    <script type="text/javascript" src="../SCRIPTS/contactUs.js"></script>
 </head>
 
 <body>
@@ -21,14 +21,31 @@
         <a href="../index.html" >Home</a>
     </div>
 </header>
-<section class="index-content">
-    <h1 class="walter-turncoat-text">Seasonal allergy notifier</h1>
-    <p class="krub-text">This app can alert you in case of
-        seasonal
-        allergies and offer you allergical treatment advices
-    </p>
-    <button class="button" onclick="notifyMe()">NOTIFY ME</button>
-</section>
+<div class="container">
+    <form action="">
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+        <label for="continent">Continent</label>
+        <select id="continent" name="country">
+            <option value="USA">USA</option>
+            <option value="Europe">Europe</option>
+            <option value="Asia">Asia</option>
+            <option value="Africa">Afria</option>
+        </select>
+
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." ></textarea>
+
+        <input type="submit" value="Submit">
+
+    </form>
+</div>
+
 </body>
 
 </html>
