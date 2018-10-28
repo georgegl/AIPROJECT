@@ -4,7 +4,7 @@ var backgroundImages = ["./IMAGES/indexBackground1.jpg", "./IMAGES/indexBackgrou
     "./IMAGES/indexBackground3.jpg"]
 
 function applyRandomBackground() {
-    var randomNum = Math.floor(Math.random() * backgroundImages.length);
+    let randomNum = Math.floor(Math.random() * backgroundImages.length);
     document.body.style.backgroundImage = "url(" + backgroundImages[randomNum] + ")";
 }
 

@@ -131,7 +131,12 @@ html{
 		grid-template-rows: 50% 50%;
 		grid-template-columns: 50% 50%;
 	}
+    .header-logo{
+        display:none;
+    }
+
 }
+
 @media only screen and (max-width: 650px) {
 	.app-description{
 		font-size: 15px;
@@ -152,4 +157,38 @@ html{
 	.footer-left-border{
 		border:none;
 	}
+
+}
+
+.header-nav {
+	background-color: #333;
+	overflow: hidden;
+}
+
+.header-nav a {
+	float: right;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.header-nav a:hover {
+	background-color: #71a8af;
+}
+
+.active {
+	background-color: #71a8af;
+	color: white;
+}
+
+.header-nav .icon {
+    display: none;
+}
+
+.header-logo{
+    margin-top: 4px;
+    margin-left: 5px;
 }
