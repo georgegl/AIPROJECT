@@ -1,7 +1,7 @@
-window.onload = applyRandomBackground
+window.onload = applyRandomBackground;
 
-var backgroundImages = ["./IMAGES/indexBackground1.jpg", "./IMAGES/indexBackground2.jpg",
-    "./IMAGES/indexBackground3.jpg"]
+var backgroundImages = ["/AIPROJECT/IMAGES/indexBackground1.jpg", "/AIPROJECT/IMAGES/indexBackground2.jpg",
+    "/AIPROJECT/IMAGES/indexBackground3.jpg"];
 
 function applyRandomBackground() {
     let randomNum = Math.floor(Math.random() * backgroundImages.length);
@@ -9,24 +9,19 @@ function applyRandomBackground() {
 }
 
 function notifyMe() {
-    // Let's check if the browser supports notifications
     if (!("Notification" in window)) {
         alert("This browser does not support desktop notification");
     }
 
-    // Let's check whether notification permissions have already been granted
     else if (Notification.permission === "granted") {
-        window.open("./HTML/notificationPage.html", '_self');
+        new Notification("Hi there!");
     }
-    // Otherwise, we need to ask the user for permission
     else if (Notification.permission !== "denied") {
-        Notification.requestPermission().then(function (permission) {
+        Notification.requestPermission(function (permission) {
             if (permission === "granted") {
-                window.open("./HTML/notificationPage.html", '_self');
+                new Notification("Hi there!");
             }
         });
     }
 
-    // At last, if the user has denied notifications, and you
-    // want to be respectful there is no need to bother them any more.
 }

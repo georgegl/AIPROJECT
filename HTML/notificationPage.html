@@ -4,30 +4,36 @@
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <title>Allergy notifier</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="../CSS/global.css" />
     <link rel="stylesheet" type="text/css" href="../CSS/notificationPage.css" />
-    <script type="text/javascript" src="../SCRIPTS/notificationPage.js"></script>
+    <script type="text/javascript" src="/AIPROJECT/SCRIPTS/notificationPage.js"></script>
 </head>
 
 <body>
     <!-- <nav></nav>  TO ADD HOME BUTTON, SEARCH BAR (IN ORDER THE USER TO BE ABLE TO SEARCH FROM THIS PAGE INFO ABOUT ANOTHER ALLERGY)-->
     <header class="app-header">
-        <span>
-            <a href="../index.html">
-                <i class="fa fa-home" style="font-size: 48px;"></i>
-            </a>
-        </span>
-        <span class="search-bar">
-            <i class="fa fa-search" style="font-size:30px;"></i>
-            <input class="krub-text search-input" type="text" placeholder="Search for other allergies info">
-        </span>
+        <div class="header-nav">
+            <img class="header-logo"  src="../IMAGES/examplelogo.png">
+            <a href="./contactUs.html">Contact us</a>
+            <a href="./notificationPage.html" class="active">Search allergy</a>
+            <a href="../index.html" >Home</a>
+        </div>
     </header>
-    <article class="">
-
+    <article>
+        <div class="searchlabel">Search for an allergy:</div>
+        <input class="searchbar" type="text" name="search" placeholder="Search..">
     </article>
+    <div class="allergyelement">
+        <h2>&emsp;Allergy Title</h2>
+        <p>&emsp;Allergy description. This allergy is very dangerous because this allergy can affect your life in a very dangerous way.Allergy description. This allergy is very dangerous because this allergy can affect your life in a very dangerous way.Allergy description. This allergy is very dangerous because this allergy can affect your life in a very dangerous way</p>
+        <h3>&emsp;Allergy treatment</h3>
+        <p>&emsp;Allergy treatment is a very good treatment because this treatment can treat fast and clean.Allergy treatment is a very good treatment because this treatment can treat fast and clean.Allergy treatment is a very good treatment because this treatment can treat fast and clean.Allergy treatment is a very good treatment because this treatment can treat fast and clean.</p>
+    </div>
+
+
     <footer class="app-footer">
         <section>
             <h2>About us</h2>

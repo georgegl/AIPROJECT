@@ -15,6 +15,10 @@
     width: 100%;
 }
 
+body {
+    margin:0;
+}
+
 .footer-left-border {
     border-width: 0px 0px 0px 2px;
     border-style: solid;
