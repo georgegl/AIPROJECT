@@ -1,118 +1,27 @@
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-    border: 0;
-    font-size: 100%;
-    margin: 0;
-    padding: 0;
-    vertical-align: baseline;
-}
-
-.active {
-    background-color: #71a8af;
-    color: white;
-}
-
-.app-header {
-    background-color: #e0ffcd;
-    top: 0px;
-    padding: 10px 20px;
-    position: absolute;
-    width: 100%;
-}
-
-.app-footer {
-    background-color: #e0ffcd;
-    bottom: 0px;
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    padding: 30px 0px;
-    position: absolute;
-    text-align: center;
-    width: 100%;
-}
-
 body {
-    background-position: center center;
-    /* Background image is centered vertically and horizontally at all times */
-    background-repeat: no-repeat;
-    /* Background image doesn't tile */
-    background-attachment: fixed;
-    /* Background image is fixed in the viewport so that it doesn't move when the content's height is greater than the image's height */
+    background: no-repeat fixed center center;
     background-size: cover;
-    /* This is what makes the background image rescale based on the container's size */
     height: 100%;
     overflow: hidden;
 }
 
-.button {
-    background-color: white;
-    border: none;
-    border-radius: 5px;
-    background-color: black;
-    color: #fff;
-    font-family: 'Krub', sans-serif;
-    font-size: 130%;
-    font-weight: bold;
-    height: 40px;
-    left: 50%;
-    margin: 50px 0px;
-    position: relative;
-    transform: translateX(-50%);
-    width: 120px;
-}
-
-.button {
-    cursor: pointer;
-}
-
 .container {
     margin: 10% auto auto;
-    width: 20%;
+    width: 300px;
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
 }
 
-.fa-home {
-    color: black;
-    cursor: pointer;
-}
-
-.footer-left-border {
-    border-width: 0px 0px 0px 2px;
-    border-style: solid;
-    border-color: #80ac7b;
-}
-
-.footer-text {
-    padding: 20px 150px;
-}
-
-html {
-    height: 100%;
-}
-
-.index-content {
-    color: black;
-    position: relative;
-    top: 40%;
-}
-
 input[type=text], select, textarea {
     width: 100%;
-    /* Full width */
     padding: 12px;
-    /* Some padding */
     border: 1px solid #ccc;
-    /* Gray border */
     border-radius: 4px;
-    /* Rounded borders */
     box-sizing: border-box;
-    /* Make sure that padding and width stays in place */
     margin-top: 6px;
-    /* Add a top margin */
     margin-bottom: 16px;
-    /* Bottom margin */
-    resize: vertical/* Allow the user to vertically resize the textarea (not horizontally) */
+    resize: vertical;
 }
 
 input[type=submit] {
@@ -122,58 +31,6 @@ input[type=submit] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-}
-
-.header-logo {
-    margin-top: 4px;
-    margin-left: 5px;
-}
-
-.header-nav {
-    background-color: #333;
-    overflow: hidden;
-}
-
-.header-nav a {
-    float: right;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-.header-nav a:hover {
-    background-color: #71a8af;
-}
-
-.header-nav .icon {
-    display: none;
-}
-
-.krub-text {
-    font-family: 'Krub', sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-}
-
-.notification-article {
-    height: 40%;
-    left: 50%;
-    position: relative;
-    transform: translateX(-50%);
-}
-
-.notification-article__img {
-    height: 100%;
-}
-
-.search-bar {
-    position: relative;
-    left: 20px;
-    top: -8px;
 }
 
 .search-input {
@@ -187,56 +44,5 @@ input[type=submit] {
     width: 350px;
 }
 
-textarea {
-    height: 200px;
-}
 
-.walter-turncoat-text {
-    font-family: 'Walter Turncoat', cursive;
-    font-size: 50px;
-    font-weight: bold;
-    text-align: center;
-}
 
-.walter-turncoat-text--notification {
-    display: inline;
-}
-
-@media only screen and (max-width: 1400px) {
-    .footer-text {
-        padding: 20px 50px;
-    }
-}
-
-@media only screen and (max-width: 700px) {
-    .app-footer {
-        grid-template-rows: 50% 50%;
-        grid-template-columns: 50% 50%;
-    }
-    .header-logo {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 650px) {
-    .app-description {
-        font-size: 15px;
-        margin: 0px 50px;
-    }
-    .app-title {
-        font-size: 35px;
-    }
-    .button {
-        height: 30px;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .app-footer {
-        grid-template-rows: 33% 33% 33%;
-        grid-template-columns: 100%;
-    }
-    .footer-left-border {
-        border: none;
-    }
-}

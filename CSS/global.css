@@ -10,7 +10,7 @@
     display: grid;
     grid-template-columns: 33% 33% 33%;
     padding: 10px 0px;
-    position: absolute;
+    position: fixed;
     text-align: center;
     width: 100%;
 }
@@ -26,7 +26,7 @@ body {
 }
 
 .footer-text {
-    padding: 20px 150px;
+    padding: 0px 30px;
     color: #fff;
 }
 
@@ -64,17 +64,29 @@ body {
     top: -8px;
 }
 
-.search-input {
-    border-color: black;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 5px;
-    font-weight: normal;
-    left: 5px;
-    position: relative;
-    width: 350px;
-}
-
 html {
     font-family: 'Karla', sans-serif;
+}
+
+@media only screen and (max-width: 700px) {
+    .header-logo {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .app-footer {
+        grid-template-rows: 33% 33% 33%;
+        grid-template-columns: 100%;
+    }
+    .footer-left-border {
+        border: none;
+    }
+    .footer-text {
+        display:none;
+    }
+    .allergyelement{
+        margin-left:5%;
+        margin-right:5%;
+    }
 }

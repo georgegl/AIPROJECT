@@ -1,23 +1,16 @@
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-    border: 0;
-    font-size: 100%;
-    margin: 0;
-    padding: 0;
-    vertical-align: baseline;
-}
-
 body {
     background-position: center center;
-    /* Background image is centered vertically and horizontally at all times */
     background-repeat: no-repeat;
-    /* Background image doesn't tile */
     background-attachment: fixed;
-    /* Background image is fixed in the viewport so that it doesn't move when the content's height is greater than the image's height */
     background-size: cover;
-    /* This is what makes the background image rescale based on the container's size */
     height: 100%;
     overflow: hidden;
 }
+
+.index-content{
+    margin-bottom:200px;
+}
+
 
 .button {
     margin: 15px auto auto;
@@ -42,23 +35,19 @@ html {
     height: 100%;
 }
 
-.index-content {
-    color: black;
-    position: relative;
-    top: 40%;
-}
-
 .app-description {
     font-size: 20px;
     font-weight: bold;
-    margin: 0px 0px 20px 0px;
+    margin-top:25px;
+    margin-bottom:100px;
     text-align: center;
 }
 
 .app-title {
     font-size: 50px;
     font-weight: bold;
-    margin: 0px 0px 20px 0px;
+    margin-top:50px;
+    margin-bottom:25px;
     text-align: center;
 }
 

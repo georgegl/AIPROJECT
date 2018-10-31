@@ -1,13 +1,29 @@
 .allergyelement{
     border-style: double;
-    margin: 20px 25% 0;
     padding: 3px;
     color:white;
+    margin-left:25%;
+    margin-right:25%;
+    margin-top:20px;
+    margin-bottom:300px;
 }
-
 
 article{
     margin-top:50px;
+}
+
+.button {
+    margin: 15px auto auto;
+    background-color: #71a8af;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 32px;
+    width: 150px;
 }
 
 .searchbar {
@@ -25,38 +41,14 @@ article{
     color:white
 }
 
-@media only screen and (max-width: 1400px) {
-    .footer-text {
-        padding: 20px 50px;
-    }
-}
-
 @media only screen and (max-width: 700px) {
-    .app-footer {
-        grid-template-rows: 50% 50%;
-        grid-template-columns: 50% 50%;
-    }
-    .header-logo {
-        display: none;
-    }
     .allergyelement{
-        margin: 20px 15% 0;
+        margin-left:10%;
+        margin-right:10%;
     }
-}
-
-@media only screen and (max-width: 600px) {
-    .app-footer {
-        grid-template-rows: 33% 33% 33%;
-        grid-template-columns: 100%;
-    }
-    .footer-left-border {
-        border: none;
-    }
-    .footer-text {
-        padding: 20px 120px;
-    }
-    .allergyelement{
-        margin: 20px 5% 0;
+    .searchbar{
+        width:340px;
+        height:40px;
     }
 }
 
