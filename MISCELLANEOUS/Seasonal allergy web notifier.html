@@ -97,6 +97,12 @@
                 numarul de sezoane de alergii
                 din lunile precedente si alte informatii reprezentate sub forma unor vizualizari 2D/3D.
             </p>
+            <div>
+                <h2>Schite pagini aplicatie</h2>
+                <br>
+                <img src="../IMAGES/index.jpg" alt="indexPageWireframe" id="wireframe">
+                <img src="../IMAGES/notificationPage.jpeg" alt="indexPageWireframe" id="wireframe">
+            </div>
             <br>
         </div>
         <hr>
@@ -128,7 +134,29 @@
             <img src="https://image.flaticon.com/icons/png/512/0/248.png" alt="InteractionSymbol" id="logo">
             <br>
             <p>
-
+                Un utilizator ajunge sa interactioneze cu aplicatia fie accesand in browser adresa aplicatiei,
+                fie ca urmare a faptului ca acesta face parte din grupul de prieteni ai unui utilizator al aplicatiei care
+                a cerut sa fie notificat de catre aceasta in situatiile in care probabilitatea aparitiei unei alergii sezoniere
+                e ridicata. Considerand cazul in care un vizitator acceseaza aplicatia si da click pe butonul "NOTIFY ME", 
+                acestuia ii va aparea in browser o fereastra prin care i se cere dreptul de a include aplicatia in lista "Allow"
+                din cadrul browserului. Daca acesta alege sa acorde aceasta permisiune, in momentul in care algoritmul de pe 
+                serverul aplicatiei determina pe baza datelor returnate de la un API ca exista posibilitatea formarii unor alergii
+                sezoniere, functie de o anumita frecventa acesta va primi notificari in legatura cu aceste posibile alergii impreuna 
+                cu sfaturi referitoare la tratamentul / medicatia corespunzatoare. Daca utilizatorul alege sa nu acorde permisiunea aplicatiei,
+                adresa acesteia va fi inclusa in lista "Block" a browserului si nu va primi notificari. Daca ulterior doreste sa primeasca 
+                aceste notificari, utilizatorul poate muta adresa aplicatiei din lista "Block" in lista "Allow". Cererea permisiunii de 
+                notificare in cadrul aplicatiei este realizata cu ajutorul interfetei <strong>Notification</strong> care face parte 
+                din <a href="https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API">Notifications API</a>. Exceptand cazul 
+                notificarii generate de serverul aplicatiei, utilizatorul poate beneficia de informatii referitoare la posibile sezoane
+                de alergii accesand aplicatia si cautand informatiile in pagina dedicata cautarilor. Rezultatul unei astfel de cautari 
+                este reprezentat prin date referitoare la perioada calendaristica in care ar putea aparea alergia, efectele pe care aceasta 
+                le are asupra celor afectati, si alte date referitoare la alergie impreuna cu sfaturi / recomandari pentru tratarea 
+                / prevenirea alergiei. In cazul in care un utilizator este notificat de catre aplicatie, acesta are posibilitatea de a-si 
+                notifica la randul lui prin intermediul unei retele de socializare persoane din grupul de prieteni. Un vizitator al aplicatiei
+                poate de asemenea sa contacteze echipa de administrare a acesteia completand un formular gasit pe pagina "Contact Us" prin care 
+                pot face observatii cu privire la continutul aplicatiei, pot trimite sugestii, etc. De asemenea, persoana care ar vizita aplicatia
+                poate afla mai multe informatii cu privire la scopul acesteia, cu privire la echipa din spatele aplicatiei si alte informatii 
+                accesand linkul "About us".
             </p>
             <br>
         </div>
