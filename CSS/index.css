@@ -7,10 +7,9 @@ body {
     overflow: hidden;
 }
 
-.index-content{
-    margin-bottom:200px;
+.index-content {
+    margin-bottom: 200px;
 }
-
 
 .button {
     margin: 15px auto auto;
@@ -38,16 +37,16 @@ html {
 .app-description {
     font-size: 20px;
     font-weight: bold;
-    margin-top:25px;
-    margin-bottom:100px;
+    margin-top: 25px;
+    margin-bottom: 100px;
     text-align: center;
 }
 
 .app-title {
     font-size: 50px;
     font-weight: bold;
-    margin-top:50px;
-    margin-bottom:25px;
+    margin-top: 50px;
+    margin-bottom: 25px;
     text-align: center;
 }
 
@@ -56,6 +55,7 @@ html {
         font-size: 15px;
         margin: 50px 50px;
     }
+
     .app-title {
         font-size: 35px;
     }

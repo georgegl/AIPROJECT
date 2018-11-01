@@ -16,7 +16,7 @@
 }
 
 body {
-    margin:0;
+    margin: 0;
 }
 
 .footer-left-border {
@@ -67,8 +67,8 @@ body {
 .responsive-image {
     width: 90%;
     height: auto;
-    margin-left:5%;
-    margin-top:3%;
+    margin-left: 5%;
+    margin-top: 3%;
 }
 
 html {
@@ -79,28 +79,31 @@ html {
     .header-logo {
         display: none;
     }
-    .small-header-logo{
-        display:inline-block;
+
+    .small-header-logo {
+        display: inline-block;
         margin-top: 7px;
         margin-left: 7px;
     }
 }
 
 @media only screen and (min-width: 700px) {
-    .small-header-logo{
-        display:none;
+    .small-header-logo {
+        display: none;
     }
 }
 
 @media only screen and (max-width: 600px) {
     .footer-text {
-        display:none;
+        display: none;
     }
-    .allergyelement{
-        margin-left:5%;
-        margin-right:5%;
+
+    .allergyelement {
+        margin-left: 5%;
+        margin-right: 5%;
     }
-    footer h2{
+
+    footer h2 {
         font-size: 15px;
     }
 }

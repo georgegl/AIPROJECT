@@ -1,390 +1,458 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 body {
-  font-family: "Libre Baskerville", Times, serif;
-  background: #f7f7f7;
-  color: #434343;
+    font-family: "Libre Baskerville", Times, serif;
+    background: #f7f7f7;
+    color: #434343;
 }
-#wireframe{
-  max-width: 80%;
-  max-height: 80%;
-  border-width: 3px;
-  border-style: solid;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+
+#wireframe {
+    max-width: 80%;
+    max-height: 80%;
+    border-width: 3px;
+    border-style: solid;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
-#wireframe-section{
-  margin: 0px;
+
+#wireframe-section {
+    margin: 0px;
 }
+
 header {
-  border-top: 8px solid #2196f3;
-  border-bottom: 2px solid #BDD5E9;
-  box-shadow: 2px 0 4px #BCBCBC;
-  margin-bottom: 64px;
-  background: #fff;
+    border-top: 8px solid #2196f3;
+    border-bottom: 2px solid #BDD5E9;
+    box-shadow: 2px 0 4px #BCBCBC;
+    margin-bottom: 64px;
+    background: #fff;
 }
+
 header p.title, header p.subtitle {
-  max-width: 900px;
-  padding: 0 10px;
-  font-variant: small-caps;
-  margin: 0 auto;
+    max-width: 900px;
+    padding: 0 10px;
+    font-variant: small-caps;
+    margin: 0 auto;
 }
+
 header p.title {
-  font-size: 32px;
-  margin-top: 16px;
+    font-size: 32px;
+    margin-top: 16px;
 }
+
 header p.subtitle {
-  margin-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 body > section, article {
-  padding: 0 10px;
-  margin: 0 auto 120px auto;
-  max-width: 900px;
+    padding: 0 10px;
+    margin: 0 auto 120px auto;
+    max-width: 900px;
 }
+
 section:target h2, section:target h3, article:target h1 {
-  color: #2196f3;
+    color: #2196f3;
 }
+
 article {
 
-  padding: 88px 88px 72px 108px;
-  background: #fff;
-  border-top: 28px solid transparent;
-  border-right: 28px solid transparent;
-  border-bottom: 8px solid transparent;
-  border-left: 4px solid transparent;
-  font-size: 13px;
-  font-weight: 300;
-  line-height: 24px;
-  -moz-hyphens: auto;
-  hyphens: auto;
+    padding: 88px 88px 72px 108px;
+    background: #fff;
+    border-top: 28px solid transparent;
+    border-right: 28px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 4px solid transparent;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 24px;
+    -moz-hyphens: auto;
+    hyphens: auto;
 }
+
 h1, h2, h3 {
-  font-variant: small-caps;
-  text-align: center;
-  font-weight: 300;
+    font-variant: small-caps;
+    text-align: center;
+    font-weight: 300;
 }
+
 h1 {
-  padding-top:  16px;
-  padding-bottom: 16px;
-  letter-spacing: .75px;
-  font-size: 24px;
-  line-height: 32px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    letter-spacing: .75px;
+    font-size: 24px;
+    line-height: 32px;
 }
+
 h2 {
-  padding-top: 16px;
-  padding-bottom: 0;
-  margin-bottom: 0;
-  letter-spacing: .75px;
-  font-size: 20px;
+    padding-top: 16px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    letter-spacing: .75px;
+    font-size: 20px;
 }
+
 h3 {
-  padding-top: 16px;
-  padding-bottom: 0;
-  letter-spacing:.5px;
-  font-size: 16px;
+    padding-top: 16px;
+    padding-bottom: 0;
+    letter-spacing: .5px;
+    font-size: 16px;
 }
+
 a {
-  color: #2196f3;
+    color: #2196f3;
 }
+
 a, :link, :visited {
-  text-decoration: none;
-  color: #2196f3;
+    text-decoration: none;
+    color: #2196f3;
 }
+
 a:active {
-  color: #64b5f6;
+    color: #64b5f6;
 }
+
 article img {
-  max-width: 100%;
-  width: auto;
-  height: auto;
+    max-width: 100%;
+    width: auto;
+    height: auto;
 }
+
 footer {
-  font-size: 13px;
-  box-shadow: -1px 0px 2px #BCBCBC;
-  background: #BDD5E9;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+    font-size: 13px;
+    box-shadow: -1px 0px 2px #BCBCBC;
+    background: #BDD5E9;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
+
 footer p {
-  max-width: 900px;
-  padding: 14px 10px;
-  margin: 0 auto;
-  text-align: center;
+    max-width: 900px;
+    padding: 14px 10px;
+    margin: 0 auto;
+    text-align: center;
 }
+
 footer a:link, footer a:visited {
-  color: white;
+    color: white;
 }
+
 footer img {
-  vertical-align: -4px;
-  background: white;
-  border-radius: 3px;
-  padding: 1px;
-  box-sizing: content-box;
+    vertical-align: -4px;
+    background: white;
+    border-radius: 3px;
+    padding: 1px;
+    box-sizing: content-box;
 }
 
 section {
-  margin-top: 90px;
+    margin-top: 90px;
 }
 
 /* wide screen */
 @media screen and (min-width: 1900px) {
-  article {
-    max-width: 1200px;
-    font-size: 16px;
-    line-height: 30px;
-  }
-  header p.title, header p.subtitle, footer p {
-    max-width: 1200px;
-  }
-  footer {
-    font-size: 16px;
-  }
+    article {
+        max-width: 1200px;
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    header p.title, header p.subtitle, footer p {
+        max-width: 1200px;
+    }
+
+    footer {
+        font-size: 16px;
+    }
 }
+
 @media screen and (max-width: 979px) {
-  article {
-    width: 100%;
-    padding: 115px 116px 79px 116px;
-    border-top: 1px solid #E0E0E0;
-    border-bottom: 1px solid #E0E0E0;
-    border-left: none;
-    border-right: none;
-  }
+    article {
+        width: 100%;
+        padding: 115px 116px 79px 116px;
+        border-top: 1px solid #E0E0E0;
+        border-bottom: 1px solid #E0E0E0;
+        border-left: none;
+        border-right: none;
+    }
 }
+
 @media screen and (max-width: 799px) {
-  article {
-    padding: 57px 58px 39px 58px;
-  }
+    article {
+        padding: 57px 58px 39px 58px;
+    }
 }
+
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 body {
-  font-family: "Libre Baskerville", Times, serif;
-  background: #f7f7f7;
-  color: #434343;
+    font-family: "Libre Baskerville", Times, serif;
+    background: #f7f7f7;
+    color: #434343;
 }
+
 header {
-  border-top: 8px solid #2196f3;
-  border-bottom: 2px solid #BDD5E9;
-  box-shadow: 2px 0 4px #BCBCBC;
-  margin-bottom: 64px;
-  background: #fff;
+    border-top: 8px solid #2196f3;
+    border-bottom: 2px solid #BDD5E9;
+    box-shadow: 2px 0 4px #BCBCBC;
+    margin-bottom: 64px;
+    background: #fff;
 }
+
 header p.title, header p.subtitle {
-  max-width: 900px;
-  padding: 0 10px;
-  font-variant: small-caps;
-  margin: 0 auto;
+    max-width: 900px;
+    padding: 0 10px;
+    font-variant: small-caps;
+    margin: 0 auto;
 }
+
 header p.title {
-  font-size: 32px;
-  margin-top: 16px;
+    font-size: 32px;
+    margin-top: 16px;
 }
+
 header p.subtitle {
-  margin-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 body > section, article {
-  padding: 0 10px;
-  margin: 0 auto 120px auto;
-  max-width: 900px;
+    padding: 0 10px;
+    margin: 0 auto 120px auto;
+    max-width: 900px;
 }
+
 section:target h2, section:target h3, article:target h1 {
-  color: #2196f3;
+    color: #2196f3;
 }
+
 article {
-  padding: 88px 88px 72px 108px;
-  background: #fff;
-  border-top: 28px solid transparent;
-  border-right: 28px solid transparent;
-  border-bottom: 8px solid transparent;
-  border-left: 4px solid transparent;
-  font-size: 13px;
-  font-weight: 300;
-  line-height: 24px;
-  -moz-hyphens: auto;
-  hyphens: auto;
+    padding: 88px 88px 72px 108px;
+    background: #fff;
+    border-top: 28px solid transparent;
+    border-right: 28px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 4px solid transparent;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 24px;
+    -moz-hyphens: auto;
+    hyphens: auto;
 }
+
 h1, h2, h3 {
-  font-variant: small-caps;
-  text-align: center;
-  font-weight: 300;
+    font-variant: small-caps;
+    text-align: center;
+    font-weight: 300;
 }
+
 h1 {
-  padding-top:  16px;
-  padding-bottom: 16px;
-  letter-spacing: .75px;
-  font-size: 24px;
-  line-height: 32px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    letter-spacing: .75px;
+    font-size: 24px;
+    line-height: 32px;
 }
+
 h2 {
-  padding-top: 16px;
-  padding-bottom: 0;
-  margin-bottom: 0;
-  letter-spacing: .75px;
-  font-size: 20px;
+    padding-top: 16px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    letter-spacing: .75px;
+    font-size: 20px;
 }
+
 h3 {
-  padding-top: 16px;
-  padding-bottom: 0;
-  letter-spacing:.5px;
-  font-size: 16px;
+    padding-top: 16px;
+    padding-bottom: 0;
+    letter-spacing: .5px;
+    font-size: 16px;
 }
+
 a {
-  color: #2196f3;
+    color: #2196f3;
 }
+
 a, :link, :visited {
-  text-decoration: none;
-  color: #2196f3;
+    text-decoration: none;
+    color: #2196f3;
 }
+
 a:active {
-  color: #64b5f6;
+    color: #64b5f6;
 }
 
 footer {
-  font-size: 13px;
-  box-shadow: -1px 0px 2px #BCBCBC;
-  background: #BDD5E9;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-footer p {
-  max-width: 900px;
-  padding: 14px 10px;
-  margin: 0 auto;
-  text-align: center;
-}
-footer a:link, footer a:visited {
-  color: white;
-}
-footer img {
-  vertical-align: -4px;
-  background: white;
-  border-radius: 3px;
-  padding: 1px;
-  box-sizing: content-box;
+    font-size: 13px;
+    box-shadow: -1px 0px 2px #BCBCBC;
+    background: #BDD5E9;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
-#logo{
-  position: relative;
-  left:50%;
-  max-height: 100px;
-  transform: translateX(-50%);
-  width: 100px;
+footer p {
+    max-width: 900px;
+    padding: 14px 10px;
+    margin: 0 auto;
+    text-align: center;
 }
+
+footer a:link, footer a:visited {
+    color: white;
+}
+
+footer img {
+    vertical-align: -4px;
+    background: white;
+    border-radius: 3px;
+    padding: 1px;
+    box-sizing: content-box;
+}
+
+#logo {
+    position: relative;
+    left: 50%;
+    max-height: 100px;
+    transform: translateX(-50%);
+    width: 100px;
+}
+
 article > section:first-of-type {
-  margin-top: 30px;
-}
-article > section:first-of-type ol::before {
-  display: block;
-  float: left;
-  width: 150px;
-  margin-left: -150px;
-  font-variant: small-caps;
-  color: #9E9E9E;
-}
-article > section:first-of-type ol:first-of-type::before {
-  content: 'Authors';
-}
-article > section:first-of-type ol:not(:first-of-type)::before {
-  content: 'Affiliations';
-}
-article > section:first-of-type ol {
-  list-style-type: none;
-  margin-left: 150px;
-  counter-reset: affiliations;
-}
-article > section:first-of-type ol:not(:first-of-type) li::before {
-  counter-increment: affiliations;
-  content: counter(affiliations, lower-latin) '.';
-  font-size: 12px;
-  display: inline;
-}
-article > section:first-of-type li {
-  display: inline;
-}
-article > section:first-of-type li::after {
-  content: ',';
-}
-article > section:first-of-type li:last-child::after {
-  content: normal;
-}
-article > section:first-of-type a[property="sa:roleAffiliation"] {
-  font-size: 12px;
-  vertical-align: super;
-}
-@media screen and (min-width: 1900px) {
-  article {
-    max-width: 1200px;
-    font-size: 16px;
-    line-height: 30px;
-  }
-  header p.title, header p.subtitle, footer p {
-    max-width: 1200px;
-  }
-  footer {
-    font-size: 16px;
-  }
-}
-@media screen and (max-width: 979px) {
-  article {
-    width: 100%;
-    padding: 115px 116px 79px 116px;
-    border-top: 1px solid #E0E0E0;
-    border-bottom: 1px solid #E0E0E0;
-    border-left: none;
-    border-right: none;
-  }
-}
-@media screen and (max-width: 799px) {
-  article {
-    padding: 57px 58px 39px 58px;
-  }
-}
-@media screen and (max-width: 399px) {
-  article {
-    padding: 28px 29px 19px 29px;
-  }
-  footer {
-    font-size: 10px;
-  }
-  article > section:first-of-type ol::before {
-    float: none;
-    width: auto;
-    margin-left: 0;
-  }
-  article > section:first-of-type ol {
-    margin-left: 0;
-    padding: 0;
-  }
-  section[typeof="sa:Abstract"] {
     margin-top: 30px;
-  }
 }
+
+article > section:first-of-type ol::before {
+    display: block;
+    float: left;
+    width: 150px;
+    margin-left: -150px;
+    font-variant: small-caps;
+    color: #9E9E9E;
+}
+
+article > section:first-of-type ol:first-of-type::before {
+    content: 'Authors';
+}
+
+article > section:first-of-type ol:not(:first-of-type)::before {
+    content: 'Affiliations';
+}
+
+article > section:first-of-type ol {
+    list-style-type: none;
+    margin-left: 150px;
+    counter-reset: affiliations;
+}
+
+article > section:first-of-type ol:not(:first-of-type) li::before {
+    counter-increment: affiliations;
+    content: counter(affiliations, lower-latin) '.';
+    font-size: 12px;
+    display: inline;
+}
+
+article > section:first-of-type li {
+    display: inline;
+}
+
+article > section:first-of-type li::after {
+    content: ',';
+}
+
+article > section:first-of-type li:last-child::after {
+    content: normal;
+}
+
+article > section:first-of-type a[property="sa:roleAffiliation"] {
+    font-size: 12px;
+    vertical-align: super;
+}
+
+@media screen and (min-width: 1900px) {
+    article {
+        max-width: 1200px;
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    header p.title, header p.subtitle, footer p {
+        max-width: 1200px;
+    }
+
+    footer {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 979px) {
+    article {
+        width: 100%;
+        padding: 115px 116px 79px 116px;
+        border-top: 1px solid #E0E0E0;
+        border-bottom: 1px solid #E0E0E0;
+        border-left: none;
+        border-right: none;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    article {
+        padding: 57px 58px 39px 58px;
+    }
+}
+
+@media screen and (max-width: 399px) {
+    article {
+        padding: 28px 29px 19px 29px;
+    }
+
+    footer {
+        font-size: 10px;
+    }
+
+    article > section:first-of-type ol::before {
+        float: none;
+        width: auto;
+        margin-left: 0;
+    }
+
+    article > section:first-of-type ol {
+        margin-left: 0;
+        padding: 0;
+    }
+
+    section[typeof="sa:Abstract"] {
+        margin-top: 30px;
+    }
+}
+
 @media print {
-  header {
-    display: none;
-  }
-  footer {
-    background: #fff;
-    border: none;
-    color: #434343;
-  }
-  body {
-    margin: 0;
-    background: #fff;
-  }
-  article {
-    width: 100%;
-    border: none;
-    padding: 2em;
-  }
-  footer a:link, footer a:visited, a:link, a:visited {
-    color: inherit;
-  }
+    header {
+        display: none;
+    }
+
+    footer {
+        background: #fff;
+        border: none;
+        color: #434343;
+    }
+
+    body {
+        margin: 0;
+        background: #fff;
+    }
+
+    article {
+        width: 100%;
+        border: none;
+        padding: 2em;
+    }
+
+    footer a:link, footer a:visited, a:link, a:visited {
+        color: inherit;
+    }
 }
