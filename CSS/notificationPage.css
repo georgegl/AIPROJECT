@@ -5,10 +5,9 @@
     margin-left:25%;
     margin-right:25%;
     margin-top:20px;
-    margin-bottom:300px;
 }
 
-article{
+.search-content{
     margin-top:50px;
 }
 
@@ -50,5 +49,15 @@ article{
         width:340px;
         height:40px;
     }
+}
+
+.statistics-content{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.space-delimiter{
+    width:100%;
+    height:200px;
 }
 

@@ -64,6 +64,13 @@ body {
     top: -8px;
 }
 
+.responsive-image {
+    width: 90%;
+    height: auto;
+    margin-left:5%;
+    margin-top:3%;
+}
+
 html {
     font-family: 'Karla', sans-serif;
 }
