@@ -316,9 +316,9 @@ footer img {
 #logo {
     position: relative;
     left: 50%;
-    max-height: 100px;
+    max-height: 150px;
     transform: translateX(-50%);
-    width: 100px;
+    width: 150px;
 }
 
 article > section:first-of-type {
