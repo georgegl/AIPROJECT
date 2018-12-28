@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="../CSS/global.css"/>
     <link rel="stylesheet" type="text/css" href="../CSS/notificationPage.css"/>
-    <script src="/AIPROJECT/SCRIPTS/notificationPage.js"></script>
+    <script src="/AIPROJECT/SCRIPTS/utils.js"></script>
 </head>
 
 <body>
@@ -24,22 +24,30 @@
 </header>
 <div class="search-content">
     <div class="searchlabel">Search for an allergy:</div>
-    <input class="searchbar" type="text" name="search" placeholder="Type here an allergy..">
-    <button class="button">Search</button>
+    <form action="notificationPage.html" method="get">
+    <input class="searchbar" type="text" name="allergy" placeholder="Type here an allergy..">
+    <button class="button" type="submit">Search</button>
+    </form>
 </div>
-<article class="allergyelement">
-    <h2>&emsp;Allergy Title</h2>
-    <img alt="Polen Image" class="responsive-image" src="/AIPROJECT/IMAGES/polen-image.png">
-    <p>&emsp;Allergy description. This allergy is very dangerous because this allergy can affect your life in a very
-        dangerous way.Allergy description. This allergy is very dangerous because this allergy can affect your life in a
-        very dangerous way.Allergy description. This allergy is very dangerous because this allergy can affect your life
-        in a very dangerous way</p>
-    <h3>&emsp;Allergy treatment</h3>
-    <p>&emsp;Allergy treatment is a very good treatment because this treatment can treat fast and clean.Allergy
-        treatment is a very good treatment because this treatment can treat fast and clean.Allergy treatment is a very
-        good treatment because this treatment can treat fast and clean.Allergy treatment is a very good treatment
-        because this treatment can treat fast and clean.</p>
-</article>
+<div class="allergy-list">
+    <article class="allergyelement">
+        <h2>&emsp;Allergy Title</h2>
+        <img alt="Polen Image" class="responsive-image" src="/AIPROJECT/IMAGES/polen-image.png">
+        <p>&emsp;Allergy description. This allergy is very dangerous because this allergy can affect your life in a very
+            dangerous way.Allergy description. This allergy is very dangerous because this allergy can affect your life
+            in a
+            very dangerous way.Allergy description. This allergy is very dangerous because this allergy can affect your
+            life
+            in a very dangerous way</p>
+        <h3>&emsp;Allergy treatment</h3>
+        <p>&emsp;Allergy treatment is a very good treatment because this treatment can treat fast and clean.Allergy
+            treatment is a very good treatment because this treatment can treat fast and clean.Allergy treatment is a
+            very
+            good treatment because this treatment can treat fast and clean.Allergy treatment is a very good treatment
+            because this treatment can treat fast and clean.</p>
+    </article>
+</div>
+
 <div class="statistics-content">
     <img alt="Pie Chart" class="responsive-image" src="/AIPROJECT/IMAGES/pie-chart.png">
     <img alt="High Chart" class="responsive-image" src="/AIPROJECT/IMAGES/high-chart.png">
@@ -61,6 +69,7 @@
             temporincididunt ut laboredolore magna aliqua</p>
     </section>
 </footer>
+<script src="/AIPROJECT/SCRIPTS/notificationPage.js"></script>
 </body>
 
 </html>

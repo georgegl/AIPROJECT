@@ -1,10 +1,7 @@
-window.onload = applyRandomBackground;
 
-let backgroundImages = ["/AIPROJECT/IMAGES/indexBackground1.jpg", "/AIPROJECT/IMAGES/indexBackground2.jpg",
-    "/AIPROJECT/IMAGES/indexBackground3.jpg"];
+let main = async function(){
+    startNotificationEngine();
+};
 
 
-function applyRandomBackground() {
-    let randomNum = Math.floor(Math.random() * backgroundImages.length);
-    document.body.style.backgroundImage = "url(" + backgroundImages[randomNum] + ")";
-}
+document.addEventListener("DOMContentLoaded", main());
