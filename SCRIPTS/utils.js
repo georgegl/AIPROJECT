@@ -6,7 +6,6 @@ let backgroundImages = ["/AIPROJECT/IMAGES/indexBackground1.jpg", "/AIPROJECT/IM
 let triggerNotification = function () {
 
     let randomSelectedElementIndex = Math.floor(Math.random()*rawAllergyData.length);
-
     let notification = new Notification(`New allergy! ${rawAllergyData[randomSelectedElementIndex].title}`);
     notification.onclick = function () {
         window.open(`/AIPROJECT/HTML/notificationPage.html?allergy=${rawAllergyData[randomSelectedElementIndex].title}`);

@@ -13,10 +13,20 @@
 </head>
 
 <body>
+<div id="fb-root"></div>
+<script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2';
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <header class="app-header">
     <div class="header-nav">
-        <img class="header-logo" alt="Header Logo" src="/AIPROJECT/IMAGES/examplelogo.png">
-        <img class="small-header-logo" alt="Small Header Logo" src="../AIPROJECT/IMAGES/small-header-logo.png">
+        <a href="/AIPROJECT/index.html"><img alt="Header Logo" class="header-logo"
+                                             src="/AIPROJECT/IMAGES/examplelogo.png"></a>
+        <img class="small-header-logo" alt="Small Header Logo" src="/AIPROJECT/IMAGES/small-header-logo.png">
         <a class="header-menu-element" href="/AIPROJECT/HTML/contactUs.html">Contact us</a>
         <a class="header-menu-element active" href="/AIPROJECT/HTML/notificationPage.html">Search allergy</a>
         <a class="header-menu-element" href="/AIPROJECT/index.html">Home</a>
@@ -25,8 +35,8 @@
 <div class="search-content">
     <div class="searchlabel">Search for an allergy:</div>
     <form action="notificationPage.html" method="get">
-    <input class="searchbar" type="text" name="allergy" placeholder="Type here an allergy..">
-    <button class="button" type="submit">Search</button>
+        <input class="searchbar" type="text" name="allergy" placeholder="Type here an allergy..">
+        <button class="button" type="submit">Search</button>
     </form>
 </div>
 <div class="allergy-list">
