@@ -22,7 +22,7 @@ async function startNotificationEngine() {
         if (Notification.permission === "granted") {
             triggerNotification();
         }
-    }, 7000);
+    }, 60000);
 }
 
 let rawAllergyData = [{

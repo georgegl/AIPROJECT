@@ -1,0 +1,12 @@
+TODO:
+1. Logo-uri - G
+2. Updatare footere - G
+3. Updatare JSON: - C
+4. Updatare buton statistica - G
+5. Raport Scholary HTML - C
+6. Ghid de utilizare Scholary HTML - C
+7. Film demonstrativ 4-7 minute. - G
+
+Future development:
+1. Beautify
+2. localStorage

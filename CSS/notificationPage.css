@@ -50,6 +50,7 @@
         width: 340px;
         height: 40px;
     }
+
 }
 
 .statistics-content {
@@ -62,3 +63,10 @@
     height: 200px;
 }
 
+.chart{
+    max-width: 30px;
+    max-height: 30px;
+}
+button{
+    padding: 0;
+}

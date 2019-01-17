@@ -3,15 +3,8 @@ function notifyMe() {
         alert("This browser does not support desktop notification");
     }
 
-    else if (Notification.permission === "granted") {
-        triggerNotification();
-    }
     else if (Notification.permission !== "denied") {
-        Notification.requestPermission(function (permission) {
-            if (permission === "granted") {
-                triggerNotification()
-            }
-        });
+        Notification.requestPermission();
     }
 
 }
