@@ -26,9 +26,20 @@ async function startNotificationEngine() {
 }
 
 let rawAllergyData = [{
-    "title": "pollen",
-    "description": "polen alergy description",
-    "treatment": "polen alergy treatment",
+    "title": "Pollen Allergy",
+    "description": "Pollen is one of the most common causes of allergies in the United States.\n" +
+    "\n" +
+    "Pollen is a very fine powder produced by trees, flowers, grasses, and weeds to fertilize other plants of the same species. Many people have an adverse immune response when they breathe in pollen.\n" +
+    "\n" +
+    "The immune system normally defends the body against harmful invaders — such as viruses and bacteria — to ward off illnesses.\n" +
+    "\n" +
+    "In people with pollen allergies, the immune system mistakenly identifies the harmless pollen as a dangerous intruder. It begins to produce chemicals to fight against the pollen.",
+    "treatment": "One key tip is to get ahead of pollen season. For example, if your symptoms are typically at their worst in mid-April, start taking your medications at the end of March. Likewise, if the weather calls for a run of warm weather toward the end of winter, it might be smart to begin taking your medication at that time as well. Ask your allergist about medications that can be taken in advance of pollen season.\n" +
+    "\n" +
+    "Two immunotherapy options are available for those with severe pollen allergies:\n" +
+    "\n" +
+    "Allergy shots can help your body build resistance to pollens.\n" +
+    "Tablets that dissolve under the tongue are now available by prescription for people suffering from grass and ragweed allergies. These medications must be started 12 weeks before symptoms are expected to begin.",
     "severity": "low",
     "cases": {
         "2004": 5343442,

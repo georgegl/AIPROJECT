@@ -70,3 +70,8 @@
 button{
     padding: 0;
 }
+
+.fb-share-button{
+    margin-left: 10%;
+    margin-bottom: 10px;
+}
