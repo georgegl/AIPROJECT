@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ro-RO">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Seasonal allergy web notifier</title>
+    <link rel="stylesheet" href="Seasonal allergy web notifier.css">
+</head>
+
+<body prefix="schema: http://schema.org/ xsd: http://www.w3.org/2001/XMLSchema# sa: https://ns.science.ai/">
+    <header>
+        <p class="title">Seasonal allergy web notifier</p>
+        <p class="subtitle">Your allergy alert system & medication adviser</p>
+    </header>
+    <article id="what" typeof="schema:ScholarlyArticle" resource="#">
+        <h1>Seasonal allergy web notifier</h1>
+        <br>
+        <section>
+            <ol>
+                <li property="schema:author" typeof="sa:ContributorRole">
+                    <a property="schema:author" typeof="schema:Person">
+                        <span property="schema:familyName">Huzum</span>
+                        <span property="schema:givenName">George</span>
+                    </a>
+                </li>
+                <li property="schema:author" typeof="sa:ContributorRole">
+                    <a property="schema:author" typeof="schema:Person">
+                        <span property="schema:familyName">Betiuc</span>
+                        <span property="schema:givenName">Claudiu Ciprian</span>
+                    </a>
+                </li>
+            </ol>
+            <ol>
+                <li>
+                    <a href="https://www.info.uaic.ro" typeof="schema:Corporation">
+                        <span property="schema:name">Faculty of Computer Science Iasi</span>
+                    </a>
+                </li>
+            </ol>
+        </section>
+        <div typeof="sa:Abstract" id="introducere">
+            <br>
+            <h2>Ghid de utilizare
+                <br>Seasonal allergy web notifier</h2>
+            <br>
+            <img src="data:image/png;base64,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"
+                alt="ListSymbol" id="logo">
+            <br>
+            <br>
+            <p>
+                &emsp;Un utilizator ajunge sa interactioneze cu aplicatia fie accesand in browser adresa aplicatiei,
+                fie ca urmare a faptului ca acesta face parte din grupul de prieteni ai unui utilizator al aplicatiei
+                care
+                a cerut sa fie notificat de catre aceasta in situatiile in care probabilitatea aparitiei unei alergii
+                sezoniere
+                e ridicata.
+                <section id="wireframe-section">
+                    <h3>Pagina index</h3>
+                    <img src="../IMAGES/index-userGuide.png" alt="indexPageWireframe" id="wireframe">
+                </section>
+                <br>
+                &emsp;Considerand cazul in care un vizitator acceseaza aplicatia si da click pe butonul "NOTIFY
+                ME",
+                acestuia ii va aparea in browser o fereastra prin care i se cere dreptul de a include aplicatia in
+                lista "Allow"
+                din cadrul browserului.
+                <section id="wireframe-section">
+                    <h3>Cererea permisiunii pentru notificare</h3>
+                    <img src="../IMAGES/cererePermisiuneNotificare-userGuide.png" alt="indexPageWireframe" id="wireframe">
+                </section>
+                <section id="wireframe-section">
+                    <h3>Pop up Allow/BLock</h3>
+                    <img src="../IMAGES/blockAllow-userGuide.png" alt="indexPageWireframe" id="wireframe">
+                </section>
+                <br>
+                &emsp; Daca acesta alege sa acorde aceasta permisiune, va fi notificat in privinta posibilitatii
+                aparitiei
+                unor alergii sezoniere. Daca utilizatorul alege sa nu acorde
+                permisiunea aplicatiei,
+                adresa acesteia va fi inclusa in lista "Block" a browserului si nu va primi notificari. Daca ulterior
+                doreste sa primeasca
+                aceste notificari, utilizatorul poate muta adresa aplicatiei din lista "Block" in lista "Allow".
+                <br><br>
+                <hr>
+                <section id="wireframe-section">
+                    <h3>Cautarea informatiilor cu privire la alergii</h3>
+                    <img src="../IMAGES/searchAllergy-userGuide.png" alt="indexPageWireframe" id="wireframe">
+                </section>
+                <br>
+                &emsp;In afara notificarii automate cu privinta la posibila aparitie a unui sezon alergenic,
+                utilizatorul poate cauta informatii referitoare la
+                posibile sezoane
+                de alergii accesand aplicatia si cautand informatiile in pagina dedicata cautarilor. Rezultatul unei
+                astfel de cautari
+                este reprezentat prin date referitoare la perioada calendaristica in care ar putea aparea alergia,
+                efectele pe care aceasta
+                le are asupra celor afectati, si alte date referitoare la alergie impreuna cu sfaturi / recomandari
+                pentru tratarea
+                / prevenirea alergiei.
+                <section id="wireframe-section">
+                    <h3>Razultatul unei astfel de cautari</h3>
+                    <img src="../IMAGES/allergyInfoAndTreatment-userGuide.png" alt="indexPageWireframe" id="wireframe">
+                </section>
+                <br>
+                &emsp;In cazul in care un utilizator este notificat de catre aplicatie, acesta are
+                posibilitatea de a-si
+                notifica la randul lui prin intermediul unei retele de socializare persoane din grupul de prieteni.
+                <section id="wireframe-section">
+                    <h3>Statistici referitoare la alergia pentru care s-a facut cautarea</h3>
+                    <img src="../IMAGES/statistics-userGuide.png" alt="indexPageWireframe" id="wireframe">
+                </section>
+                <br>
+                &emsp;Odata facuta o cautare cu privire la o alergie, utilizatorul are posiiblitatea vizionarii
+                unei statistici referitoare la numarul de persoane care au fost afectate de respectiva alergie
+                in ultimii ani. Numarul de persoane afectate de alergie este exprimat in milioane.
+                <section id="wireframe-section">
+                    <h3>Formular pentru submitere de date</h3>
+                    <img src="../IMAGES/contactUs-userGuide.png" alt="indexPageWireframe" id="wireframe">
+                </section>
+                <br>
+                &emsp;Utilizatorul are posibilitatea trimiterii unor date utilizand
+                formularul in care isi poate trece datele personale si poate edita un mesaj catre cei care
+                administreaza aplicatia (sugestii pentru imbunatatirea aplicatiei, observatii, intrebari, etc)
+            </p>
+            <br>
+        </div>
+    </article>
+    <footer>
+        <p>
+            <a href="http://www.info.uaic.ro/bin/Main/">FII</a>
+            •
+            <a href="https://profs.info.uaic.ro/~busaco/teach/courses/cliw/index.html">Dezvoltarea aplicatiilor web la
+                nivel
+                de client</a>
+            •
+            <a href="https://profs.info.uaic.ro/~busaco/teach/courses/cliw/web-projects.html">Proiecte</a>
+        </p>
+    </footer>
+</body>
+
+</html>
