@@ -22,7 +22,7 @@ async function startNotificationEngine() {
         if (Notification.permission === "granted") {
             triggerNotification();
         }
-    }, 60000);
+    }, 10000);
 }
 
 let rawAllergyData = [{
@@ -58,12 +58,21 @@ let rawAllergyData = [{
         "2017": 5409122,
         "2018": 1229122
     },
+    "image": "/AIPROJECT/IMAGES/polen-image.png",
     "season": "06-08"
 },
     {
-        "title": "dust",
-        "description": "dust alergy description",
-        "treatment": "dust alergy treatment",
+        "title": "Dust Allergy",
+        "description": "Home is supposed to be a comforting oasis, but for people with dust allergies the home can trigger uncomfortable symptoms. Oddly enough, allergy symptoms often worsen during or immediately after vacuuming, sweeping and dusting. The process of cleaning can stir up dust particles, making them easier to inhale.\n" +
+        "\n" +
+        "People with dust mite allergies often suffer the most inside their homes or in other people’s homes. Dust mites are microscopic organisms that feed off house dust and the moisture in the air. They are one of the most common indoor allergens, and symptoms can be present year-round. In addition to allergic rhinitis, dust mite allergy can also trigger asthma and cause eczema to flare. Use the Find an Allergist tool to find expert care for your dust allergies.",
+        "treatment": "If you think you may have an allergy to any of the components of house dust, see an allergist. To pinpoint the cause of your symptoms, the allergist will ask detailed questions about your work and home environments, family medical history, frequency and severity of symptoms and exposure to pets and other possible triggers.\n" +
+        "\n" +
+        "Sometimes the medical interview will reveal a likely culprit—for instance, a girl who gets a stuffy nose every time she plays with a friend’s cat might have an allergy to cats or to the dust infused with cat hair in her friend’s house.\n" +
+        "\n" +
+        "Often an allergist will need to conduct a skin test to determine exactly what is triggering an allergic reaction.\n" +
+        "\n" +
+        "Skin tests involve using a small, sterile probe to prick the skin with extracts from common allergens, such as tree pollen and pet dander, and observing the reaction. A positive reaction (a raised welt with redness around it) may indicate that you are allergic to that substance. Occasionally, your allergist may order a blood test and a skin test to confirm an allergy.",
         "severity": "medium",
         "cases": {
             "2004": 5343442,
@@ -82,12 +91,17 @@ let rawAllergyData = [{
             "2017": 54091422,
             "2018": 12291322
         },
+        "image": "/AIPROJECT/IMAGES/dustallergy.jpg",
         "season": "undefined"
     },
     {
-        "title": "lactose",
-        "description": "lactose alergy description",
-        "treatment": "lactose alergy treatment",
+        "title": "Lactose Allergy",
+        "description": "Lactose intolerance involves the digestive system: If you have it, your body doesn’t make lactase, the enzyme needed to digest lactose. That’s the sugar in milk. Instead of digesting normally in your stomach and small intestine, undigested lactose moves into your colon, where it’s broken down by bacteria and causes bloating and gas. It can be uncomfortable, but it’s not dangerous.\n" +
+        "\n" +
+        "Lactose intolerance is common in adults – about 30 million Americans have it by age 20. It’s more common in people with Asian, African or Native American heritage and less common in people with a northern or western European background.",
+        "treatment": "Get Enough Calcium\n" +
+        "\n" +
+        "If you limit milk and other dairy products, you may not get enough calcium and vitamin D. Talk to your doctor about taking calcium supplements with vitamin D and eating calcium-rich foods, such as leafy greens, broccoli, and some seafood like salmon.",
         "severity": "high",
         "cases": {
             "2004": 5343442,
@@ -106,12 +120,15 @@ let rawAllergyData = [{
             "2017": 5491422,
             "2018": 162322
         },
+        "image": "/AIPROJECT/IMAGES/lactoseallergy.jpg",
         "season": "undefined"
     },
     {
-        "title": "stings",
-        "description": "stings alergy description",
-        "treatment": "stings alergy treatment",
+        "title": "Stings Allergy",
+        "description": "It’s more common to fear an insect sting than to actually be allergic to one. An allergist is an expert who can explain the difference between an allergic reaction and a normal reaction, thus reducing anxiety and preventing unnecessary medical expense.\n" +
+        "\n" +
+        "Thousands of people enter hospital emergency rooms or urgent care clinics every year suffering from insect stings. It has been estimated that potentially life-threatening allergic reactions occur in 0.4% – 0.8% of children and 3% of adults. At least 90 – 100 deaths per year result from insect sting anaphylaxis.",
+        "treatment": "Injectable epinephrine for self-administration is often prescribed as emergency rescue medication for treating an allergic reaction. People who have had previous allergic reactions and rely on epinephrine must remember to carry it with them at all times. Also, because one dose may not be enough to reverse the reaction, recent guidelines recommend keeping two doses of injectable epinephrine available and to activate emergency medical services if used. Even if symptoms improve after a single dose of epinephrine, immediate medical attention following an insect sting is recommended.",
         "severity": "high",
         "cases": {
             "2004": 56343442,
@@ -130,6 +147,7 @@ let rawAllergyData = [{
             "2017": 5491422,
             "2018": 1262329
         },
+        "image": "/AIPROJECT/IMAGES/stingsallergy.png",
         "season": "06-08"
     }
 ];

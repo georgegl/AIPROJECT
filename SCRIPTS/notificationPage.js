@@ -6,12 +6,13 @@ let main = async function () {
     let parsedData = JSON.parse(stringifiedData);
 
     if (location.search.split('=')[1] !== undefined) {
-        let requestedAllergy = location.search.split('=')[1];
+        let requestedAllergy = location.search.split('=')[1].replace('%20',' ');
         let filteredList = parsedData.filter(elem => elem.title.includes(requestedAllergy));
         parsedData = filteredList;
     }
 
-    let allergyElementList = `${parsedData.map(item => `<article class="allergyelement"><button id="chartButton-${item.title}"><img src="/AIPROJECT/IMAGES/chart-icon-color.png" alt="chartSymbol" class="chart"></button><div id="chartDiv-${item.title}"></div><h2>&emsp;${item.title}</h2><img alt="Polen Image" class="responsive-image" src="/AIPROJECT/IMAGES/polen-image.png"><h3>&emsp;Allergy description</h3><p>&emsp;${item.description}</p><h3>&emsp;Allergy treatment</h3><p>&emsp;${item.treatment}</p><div class="fb-share-button" data-href="http://localhost:63342/AIPROJECT/HTML/notificationPage.html?allergy=${item.title}" data-layout="button" data-size="large" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A63342%2FAIPROJECT%2FHTML%2FnotificationPage.html%3Fallergy%3D${item.title}&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div></article>`)}`;
+    let allergyElementList = `${parsedData.map(item => `<article class="allergyelement"><span>Statistics:</span><span class="chart-container"><button id="chartButton-${item.title}"><img src="/AIPROJECT/IMAGES/chart-icon-color.png" alt="chartSymbol" class="chart"></button><div id="chartDiv-${item.title}"></div></span><h2>&emsp;${item.title}</h2><img alt=${item.title} class="responsive-image" src=${item.image}><h3>&emsp;Allergy description</h3><p>&emsp;${item.description}</p><h3>&emsp;Allergy treatment</h3><p>&emsp;${item.treatment}</p><div class="fb-share-button" data-href="http://localhost:63342/AIPROJECT/HTML/notificationPage.html?allergy=${item.title}" data-layout="button" data-size="large" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A63342%2FAIPROJECT%2FHTML%2FnotificationPage.html%3Fallergy%3D${item.title}&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div></article>`)}`;
+    console.log(parsedData);
     el.innerHTML = allergyElementList;
 
     for (let i = 0; i < parsedData.length; i++) {
@@ -26,7 +27,7 @@ let main = async function () {
         };
 
         let layout = {
-            title: parsedData[i].title.toUpperCase() + ' ALLERGY (CASES PER YEAR)',
+            title: parsedData[i].title.toUpperCase() + ' (CASES PER YEAR)',
             showlegend: false
         };
 
