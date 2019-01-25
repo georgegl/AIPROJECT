@@ -4,11 +4,13 @@ let backgroundImages = ["/AIPROJECT/IMAGES/indexBackground1.jpg", "/AIPROJECT/IM
     "/AIPROJECT/IMAGES/indexBackground3.jpg"];
 
 let triggerNotification = function () {
+    let severityLevel = localStorage.getItem('severityFilter');
+    let availableAllergies = getAllergiesBySeverityLevel(severityLevel);
 
-    let randomSelectedElementIndex = Math.floor(Math.random()*rawAllergyData.length);
-    let notification = new Notification(`New allergy! ${rawAllergyData[randomSelectedElementIndex].title}`);
+    let randomSelectedElementIndex = Math.floor(Math.random()*availableAllergies.length);
+    let notification = new Notification(`New allergy! ${availableAllergies[randomSelectedElementIndex].title}`);
     notification.onclick = function () {
-        window.open(`/AIPROJECT/HTML/notificationPage.html?allergy=${rawAllergyData[randomSelectedElementIndex].title}`);
+        window.open(`/AIPROJECT/HTML/notificationPage.html?allergy=${availableAllergies[randomSelectedElementIndex].title}`);
     }
 };
 
@@ -23,6 +25,17 @@ async function startNotificationEngine() {
             triggerNotification();
         }
     }, 10000);
+}
+
+function getAllergiesBySeverityLevel(severityLevel){
+    let stringifiedData = JSON.stringify(rawAllergyData);
+    let parsedData = JSON.parse(stringifiedData);
+
+    if (severityLevel === null) {
+        return parsedData;
+    } else {
+        return parsedData.filter(elem => elem.severity.toLowerCase() === severityLevel.toLowerCase());
+    }
 }
 
 let rawAllergyData = [{

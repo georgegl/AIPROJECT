@@ -5,8 +5,8 @@ body {
     overflow: hidden;
 }
 
-.container {
-    margin: 10% auto auto;
+.contact-container {
+    margin: 10px auto auto;
     width: 300px;
     border-radius: 5px;
     background-color: #f2f2f2;

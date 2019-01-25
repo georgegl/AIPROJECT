@@ -10,7 +10,6 @@
     <link rel="stylesheet" type="text/css" href="../CSS/global.css"/>
     <link rel="stylesheet" type="text/css" href="../CSS/contactUs.css"/>
     <script src="../SCRIPTS/utils.js"></script>
-    <script src="../SCRIPTS/contactUs.js"></script>
 </head>
 
 <body>
@@ -24,7 +23,22 @@
         <a class="header-menu-element" href="/AIPROJECT/index.html">Home</a>
     </div>
 </header>
-<div class="container">
+<div class="contact-container">
+    <form>
+        <label>Filter by severity level:</label>
+        <select id="severity-level">
+            <option value="default">Select filter...</option>
+            <option value="Low">Low severity</option>
+            <option value="Medium">Medium severity</option>
+            <option value="High">High severity</option>
+            <option value="Reset">Reset filters</option>
+        </select>
+        <input type="submit" onclick="setSeverityFilter()" value="Submit">
+    </form>
+    <div id="current-filter"></div>
+</div>
+
+<div class="contact-container">
     <form>
 
         <label for="fname">First Name</label>
@@ -64,7 +78,7 @@
             for life-time!</p>
     </section>
 </footer>
-
+<script src="../SCRIPTS/contactUs.js"></script>
 </body>
 
 </html>

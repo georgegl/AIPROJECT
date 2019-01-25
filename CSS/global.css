@@ -107,3 +107,8 @@ html {
         font-size: 15px;
     }
 }
+
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
